@@ -21,6 +21,14 @@ class Mahasiswa extends CI_Controller{
 		$this->load->view('templates/footer');
 	}
 
+	public function tambah()
+	{
+		$data['judul'] = 'Form Tambah Data Mahsiswa';
+		$this->load->view('templates/header',$data);
+		$this->load->view('mahasiswa/tambah');
+		$this->load->view('templates/footer');
+	}
+
 
 
 
